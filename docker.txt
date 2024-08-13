@@ -1,0 +1,16 @@
+1. bangun (build) docker image
+docker build --tag=demo-server:1.0 .
+
+demo-server = nama image
+1.0 = tag image
+. = lokasi dockerfile
+
+
+2. jalanin docker image
+docker run -p8081:8080 demo-server:1.0
+
+8081 = port asal (host)
+8080 = port tujuan (container)
+demo-server:1.0 = nama image & tag
+
+
